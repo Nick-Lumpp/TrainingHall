@@ -14,4 +14,10 @@ table 70060 "UOM Table GOS"
             Caption = 'Description';
         }
     }
+
+    keys
+    {
+        key(key1; Code)
+        { }
+    }
 }
