@@ -24,9 +24,9 @@ table 70040 "Course GOS"
         {
             Caption = 'Available Credits';
         }
-        field(6; "Course Duration"; Enum "Course Duration GOS")
+        field(6; "Duration"; Decimal)
         {
-            Caption = 'Course Duration';
+            Caption = 'Duration';
         }
     }
 

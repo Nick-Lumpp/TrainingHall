@@ -8,13 +8,13 @@ table 70030 "Major GOS"
         {
             Caption = 'Code';
         }
-        field(2; "Course Name"; Text[50])
+        field(2; "Name"; Text[50])
         {
             Caption = 'Name';
         }
-        field(3; "Course Duration"; Enum "Course Duration GOS")
+        field(3; "Duration"; Decimal)
         {
-            Caption = 'Course Duration';
+            Caption = 'Duration';
         }
     }
 

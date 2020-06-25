@@ -17,11 +17,11 @@ page 70030 "Majors Page"
                 {
                     ApplicationArea = All;
                 }
-                field("Course Name"; "Course Name")
+                field(Name; Name)
                 {
                     ApplicationArea = All;
                 }
-                field("Course Duration"; "Course Duration")
+                field(Duration; Duration)
                 {
                     ApplicationArea = All;
                 }

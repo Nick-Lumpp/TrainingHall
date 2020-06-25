@@ -33,7 +33,7 @@ page 70040 "Courses Page"
                 {
                     ApplicationArea = All;
                 }
-                field("Course Duration"; "Course Duration")
+                field("Course Duration"; "Duration")
                 {
                     ApplicationArea = All;
                 }
