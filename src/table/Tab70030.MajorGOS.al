@@ -16,6 +16,12 @@ table 70030 "Major GOS"
         {
             Caption = 'Duration';
         }
+
+        field(4; "Unit of Measure"; Code[10])
+        {
+            Caption = 'Unit of Measure';
+            TableRelation = "UOM Table GOS";
+        }
     }
 
     keys

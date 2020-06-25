@@ -28,6 +28,11 @@ table 70040 "Course GOS"
         {
             Caption = 'Duration';
         }
+        field(7; "Unit of Measure"; Code[10])
+        {
+            Caption = 'Unit of Measure';
+            TableRelation = "UOM Table GOS";
+        }
     }
 
     keys

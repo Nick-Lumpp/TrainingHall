@@ -21,7 +21,11 @@ page 70030 "Majors Page"
                 {
                     ApplicationArea = All;
                 }
-                field(Duration; Duration)
+                field("Duration"; "Duration")
+                {
+                    ApplicationArea = All;
+                }
+                field("Unit of Measure"; "Unit of Measure")
                 {
                     ApplicationArea = All;
                 }
