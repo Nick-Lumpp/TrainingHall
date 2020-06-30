@@ -4,7 +4,7 @@ table 70050 "Module GOS"
 
     fields
     {
-        field(1; "Course Code"; code[20])
+        field(1; "Course Code"; Code[20])
         {
             Caption = 'Course Code';
             TableRelation = "Course GOS";

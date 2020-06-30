@@ -4,7 +4,7 @@ table 70060 "UOM Table GOS"
 
     fields
     {
-        field(1; "Code"; Code[10])
+        field(1; "Code"; Code[20])
         {
             Caption = 'Code';
         }
