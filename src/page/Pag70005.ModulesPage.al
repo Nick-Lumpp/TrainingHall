@@ -17,6 +17,10 @@ page 70005 "Modules Page"
                 {
                     ApplicationArea = All;
                 }
+                field("Module Code"; "Module Code")
+                {
+                    ApplicationArea = All;
+                }
                 field("Module Name"; "Module Name")
                 {
                     ApplicationArea = All;
@@ -26,6 +30,14 @@ page 70005 "Modules Page"
                     ApplicationArea = All;
                 }
                 field(Credits; Credits)
+                {
+                    ApplicationArea = All;
+                }
+                field(Duration; Duration)
+                {
+                    ApplicationArea = All;
+                }
+                field("Unit of Measure"; "Unit of Measure")
                 {
                     ApplicationArea = All;
                 }
