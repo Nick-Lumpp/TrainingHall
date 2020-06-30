@@ -31,4 +31,9 @@ enum 70000 "Room Type GOS"
     {
         Caption = 'Sports Hall';
     }
+
+    value(7; "Office")
+    {
+        Caption = 'Office';
+    }
 }
