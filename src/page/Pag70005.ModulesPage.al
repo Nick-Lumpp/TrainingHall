@@ -13,7 +13,11 @@ page 70005 "Modules Page"
         {
             repeater(General)
             {
-                field("Course Code"; "Course Code")
+                field("Major Code"; "Major Code")
+                {
+                    ApplicationArea = All;
+                }
+                field("Module Code"; "Module Code")
                 {
                     ApplicationArea = All;
                 }
@@ -25,7 +29,15 @@ page 70005 "Modules Page"
                 {
                     ApplicationArea = All;
                 }
-                field(Weigting; Weigting)
+                field(Credits; Credits)
+                {
+                    ApplicationArea = All;
+                }
+                field(Duration; Duration)
+                {
+                    ApplicationArea = All;
+                }
+                field("Unit of Measure"; "Unit of Measure")
                 {
                     ApplicationArea = All;
                 }
