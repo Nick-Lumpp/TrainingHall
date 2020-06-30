@@ -4,10 +4,10 @@ table 70050 "Module GOS"
 
     fields
     {
-        field(1; "Course Code"; Code[20])
+        field(1; "Module Code"; Code[20])
         {
-            Caption = 'Course Code';
-            TableRelation = "Course GOS";
+            Caption = 'Module Code';
+            TableRelation = "Module GOS";
         }
         field(2; "Module Name"; Text[50])
         {
@@ -25,7 +25,7 @@ table 70050 "Module GOS"
 
     keys
     {
-        key(key1; "Course Code", "Module Name")
+        key(key1; "Module Code", "Module Name")
         { }
     }
 }
