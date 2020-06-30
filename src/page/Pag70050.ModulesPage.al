@@ -25,7 +25,7 @@ page 70050 "Modules Page"
                 {
                     ApplicationArea = All;
                 }
-                field(Credits; Credits)
+                field(Weigting; Weigting)
                 {
                     ApplicationArea = All;
                 }

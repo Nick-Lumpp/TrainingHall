@@ -17,9 +17,9 @@ table 70050 "Module GOS"
         {
             Caption = 'Description';
         }
-        field(4; Credits; Decimal)
+        field(4; Weigting; Decimal)
         {
-            Caption = 'Credits';
+            Caption = 'Weighting';
         }
     }
 
