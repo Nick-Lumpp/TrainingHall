@@ -1,10 +1,10 @@
-page 70020 "Rooms Page"
+page 70004 "Courses Page"
 {
 
     ApplicationArea = All;
-    Caption = 'Rooms';
+    Caption = 'Courses';
     PageType = List;
-    SourceTable = "Room Table GOS";
+    SourceTable = "Course GOS";
     UsageCategory = Lists;
 
     layout
@@ -13,27 +13,31 @@ page 70020 "Rooms Page"
         {
             repeater(General)
             {
-                field("Location Code"; "Location Code")
+                field(Code; Code)
                 {
                     ApplicationArea = All;
                 }
-                field("Building Code"; "Building Code")
+                field(Name; Name)
                 {
                     ApplicationArea = All;
                 }
-                field("Room Nr"; "Room No.")
+                field(Description; Description)
                 {
                     ApplicationArea = All;
                 }
-                field(Floor; Floor)
+                field("Search Terms"; "Search Terms")
                 {
                     ApplicationArea = All;
                 }
-                field("Room Type"; "Room Type")
+                field("Available Credits"; "Available Credits")
                 {
                     ApplicationArea = All;
                 }
-                field(Capacity; Capacity)
+                field(Duration; Duration)
+                {
+                    ApplicationArea = All;
+                }
+                field("Unit of Measure"; "Unit of Measure")
                 {
                     ApplicationArea = All;
                 }

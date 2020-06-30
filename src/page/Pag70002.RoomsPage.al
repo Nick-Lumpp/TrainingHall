@@ -1,10 +1,10 @@
-page 70000 "Buildings Page"
+page 70002 "Rooms Page"
 {
 
     ApplicationArea = All;
-    Caption = 'Buildings';
+    Caption = 'Rooms';
     PageType = List;
-    SourceTable = "Building Table GOS";
+    SourceTable = "Room Table GOS";
     UsageCategory = Lists;
 
     layout
@@ -17,23 +17,23 @@ page 70000 "Buildings Page"
                 {
                     ApplicationArea = All;
                 }
-                field(Code; Code)
+                field("Building Code"; "Building Code")
                 {
                     ApplicationArea = All;
                 }
-                field(Name; Name)
+                field("Room No."; "Room No.")
                 {
                     ApplicationArea = All;
                 }
-                field("Building Type"; "Building Type")
+                field(Floor; Floor)
                 {
                     ApplicationArea = All;
                 }
-                field("GPS Co-ordinates"; "GPS Co-ordinates")
+                field("Room Type"; "Room Type")
                 {
                     ApplicationArea = All;
                 }
-                field("No. of Rooms"; "No. of Rooms")
+                field(Capacity; Capacity)
                 {
                     ApplicationArea = All;
                 }

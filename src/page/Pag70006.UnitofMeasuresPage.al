@@ -1,10 +1,10 @@
-page 70050 "Modules Page"
+page 70006 "Unit of Measures Page"
 {
 
     ApplicationArea = All;
-    Caption = 'Modules';
+    Caption = 'UOM';
     PageType = List;
-    SourceTable = "Module GOS";
+    SourceTable = "UOM Table GOS";
     UsageCategory = Lists;
 
     layout
@@ -13,19 +13,11 @@ page 70050 "Modules Page"
         {
             repeater(General)
             {
-                field("Course Code"; "Course Code")
-                {
-                    ApplicationArea = All;
-                }
-                field("Module Name"; "Module Name")
+                field(Code; Code)
                 {
                     ApplicationArea = All;
                 }
                 field(Description; Description)
-                {
-                    ApplicationArea = All;
-                }
-                field(Weighting; Weighting)
                 {
                     ApplicationArea = All;
                 }

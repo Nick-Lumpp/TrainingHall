@@ -1,35 +1,23 @@
-page 70003 "Courses GOS"
+page 70003 "Majors Page"
 {
-    
+
     ApplicationArea = All;
-    Caption = 'Courses GOS';
+    Caption = 'Majors';
     PageType = List;
-    SourceTable = "Course GOS";
+    SourceTable = "Major GOS";
     UsageCategory = Lists;
-    
+
     layout
     {
         area(content)
         {
             repeater(General)
             {
-                field(Code; Code)
+                field("Major Code"; "Major Code")
                 {
                     ApplicationArea = All;
                 }
                 field(Name; Name)
-                {
-                    ApplicationArea = All;
-                }
-                field(Description; Description)
-                {
-                    ApplicationArea = All;
-                }
-                field("Search Terms"; "Search Terms")
-                {
-                    ApplicationArea = All;
-                }
-                field("Available Credits"; "Available Credits")
                 {
                     ApplicationArea = All;
                 }
@@ -44,5 +32,5 @@ page 70003 "Courses GOS"
             }
         }
     }
-    
+
 }
