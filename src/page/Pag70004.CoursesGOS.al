@@ -1,4 +1,4 @@
-page 70003 "Courses GOS"
+page 70004 "Courses GOS"
 {
 
     ApplicationArea = All;

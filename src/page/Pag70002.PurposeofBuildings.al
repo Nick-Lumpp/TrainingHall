@@ -1,10 +1,10 @@
-page 70002 "Unit of Measures GOS"
+page 70002 "Purpose of Buildings"
 {
 
     ApplicationArea = All;
-    Caption = 'UOM';
+    Caption = 'Purpose of Buildings';
     PageType = List;
-    SourceTable = "UOM Table GOS";
+    SourceTable = "Purpose of Building GOS";
     UsageCategory = Lists;
 
     layout
