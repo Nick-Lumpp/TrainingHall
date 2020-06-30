@@ -1,12 +1,12 @@
 page 70002 "Rooms Page"
 {
-    
+
     ApplicationArea = All;
-    Caption = 'Rooms Page';
+    Caption = 'Rooms';
     PageType = List;
     SourceTable = "Room Table GOS";
     UsageCategory = Lists;
-    
+
     layout
     {
         area(content)
@@ -40,5 +40,5 @@ page 70002 "Rooms Page"
             }
         }
     }
-    
+
 }

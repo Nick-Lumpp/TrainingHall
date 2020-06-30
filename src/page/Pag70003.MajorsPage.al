@@ -1,12 +1,12 @@
 page 70003 "Majors Page"
 {
-    
+
     ApplicationArea = All;
-    Caption = 'Majors Page';
+    Caption = 'Majors';
     PageType = List;
     SourceTable = "Major GOS";
     UsageCategory = Lists;
-    
+
     layout
     {
         area(content)
@@ -32,5 +32,5 @@ page 70003 "Majors Page"
             }
         }
     }
-    
+
 }

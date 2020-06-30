@@ -1,12 +1,12 @@
 page 70005 "Modules Page"
 {
-    
+
     ApplicationArea = All;
-    Caption = 'Modules Page';
+    Caption = 'Modules';
     PageType = List;
     SourceTable = "Module GOS";
     UsageCategory = Lists;
-    
+
     layout
     {
         area(content)
@@ -32,5 +32,5 @@ page 70005 "Modules Page"
             }
         }
     }
-    
+
 }

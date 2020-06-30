@@ -1,12 +1,12 @@
 page 70004 "Courses Page"
 {
-    
+
     ApplicationArea = All;
-    Caption = 'Courses Page';
+    Caption = 'Courses';
     PageType = List;
     SourceTable = "Course GOS";
     UsageCategory = Lists;
-    
+
     layout
     {
         area(content)
@@ -44,5 +44,5 @@ page 70004 "Courses Page"
             }
         }
     }
-    
+
 }

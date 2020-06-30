@@ -1,12 +1,12 @@
 page 70006 "Unit of Measures Page"
 {
-    
+
     ApplicationArea = All;
-    Caption = 'Unit of Measures Page';
+    Caption = 'UOM';
     PageType = List;
     SourceTable = "UOM Table GOS";
     UsageCategory = Lists;
-    
+
     layout
     {
         area(content)
@@ -24,5 +24,5 @@ page 70006 "Unit of Measures Page"
             }
         }
     }
-    
+
 }

@@ -1,12 +1,12 @@
 page 70000 "Buildings Page"
 {
-    
+
     ApplicationArea = All;
-    Caption = 'Buildings Page';
+    Caption = 'Buildings';
     PageType = List;
     SourceTable = "Building Table GOS";
     UsageCategory = Lists;
-    
+
     layout
     {
         area(content)
@@ -40,5 +40,5 @@ page 70000 "Buildings Page"
             }
         }
     }
-    
+
 }
