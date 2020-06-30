@@ -13,7 +13,7 @@ page 70050 "Modules Page"
         {
             repeater(General)
             {
-                field("Module Code"; "Module Code")
+                field("Course Code"; "Course Code")
                 {
                     ApplicationArea = All;
                 }
