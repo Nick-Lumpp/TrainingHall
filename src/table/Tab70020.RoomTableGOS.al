@@ -12,7 +12,7 @@ table 70020 "Room Table GOS"
         field(2; "Building Code"; Code[20])
         {
             Caption = 'Building Code';
-            TableRelation = "Building Table GOS"."Code" where("Location Code" = field("Location Code"));
+            TableRelation = "Building"."Code" where("Location Code" = field("Location Code"));
         }
 
         field(3; "Room No."; Code[20])
