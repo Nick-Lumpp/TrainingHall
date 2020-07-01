@@ -1,10 +1,10 @@
 page 70007 "Buildings Card"
 {
-    
+
     Caption = 'Buildings Card';
     PageType = Card;
     SourceTable = Building;
-    
+
     layout
     {
         area(content)
@@ -36,7 +36,30 @@ page 70007 "Buildings Card"
                     ApplicationArea = All;
                 }
             }
+            part(Rooms; "Rooms List")
+            {
+                ApplicationArea = All;
+                SubPageLink = "Location Code" = field("Location Code"), "Building Code" = field(Code);
+            }
         }
     }
-    
+
+    actions
+    {
+        area(Navigation)
+        {
+            action(Locations)
+            {
+                ApplicationArea = All;
+                Caption = 'Locations';
+                RunObject = page "Location List";
+                RunPageMode = View;
+                Image = Warehouse;
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                PromotedOnly = true;
+            }
+        }
+    }
 }
