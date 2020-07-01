@@ -6,7 +6,7 @@ page 70000 "Buildings List"
     PageType = List;
     SourceTable = "Building";
     UsageCategory = Lists;
-    CardPageId = "Buildings Card";
+    CardPageId = "Building Card";
 
     layout
     {

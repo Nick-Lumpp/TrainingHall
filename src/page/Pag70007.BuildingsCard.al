@@ -1,7 +1,7 @@
-page 70007 "Buildings Card"
+page 70007 "Building Card"
 {
 
-    Caption = 'Buildings Card';
+    Caption = 'Building Card';
     PageType = Card;
     SourceTable = Building;
 
