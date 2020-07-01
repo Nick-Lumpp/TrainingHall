@@ -1,4 +1,4 @@
-page 70006 "Unit of Measures Page"
+page 70006 "Unit of Measures List"
 {
 
     ApplicationArea = All;

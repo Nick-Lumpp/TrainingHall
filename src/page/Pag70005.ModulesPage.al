@@ -1,4 +1,4 @@
-page 70005 "Modules Page"
+page 70005 "Modules List"
 {
 
     ApplicationArea = All;

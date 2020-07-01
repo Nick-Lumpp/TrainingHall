@@ -1,4 +1,4 @@
-page 70004 "Courses Page"
+page 70004 "Courses List"
 {
 
     ApplicationArea = All;

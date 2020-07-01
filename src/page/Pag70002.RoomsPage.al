@@ -1,4 +1,4 @@
-page 70002 "Rooms Page"
+page 70002 "Rooms List"
 {
 
     ApplicationArea = All;

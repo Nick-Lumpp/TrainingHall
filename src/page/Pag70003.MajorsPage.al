@@ -1,4 +1,4 @@
-page 70003 "Majors Page"
+page 70003 "Majors List"
 {
 
     ApplicationArea = All;
