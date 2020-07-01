@@ -1,6 +1,6 @@
 page 70003 "Majors List"
 {
-
+    Editable = false;
     ApplicationArea = All;
     Caption = 'Majors';
     PageType = List;
