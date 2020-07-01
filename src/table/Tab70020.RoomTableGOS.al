@@ -1,4 +1,4 @@
-table 70020 "Room Table GOS"
+table 70020 "Room"
 {
     Caption = 'Lecture Room';
     fields

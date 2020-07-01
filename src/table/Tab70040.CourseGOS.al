@@ -1,4 +1,4 @@
-table 70040 "Course GOS"
+table 70040 "Course"
 {
     Caption = 'Course';
 
@@ -31,7 +31,7 @@ table 70040 "Course GOS"
         field(7; "Unit of Measure"; Code[10])
         {
             Caption = 'Unit of Measure';
-            TableRelation = "UOM Table GOS";
+            TableRelation = UoM;
         }
     }
 

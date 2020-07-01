@@ -1,6 +1,6 @@
-table 70060 "UOM Table GOS"
+table 70060 "UoM"
 {
-    Caption = 'UOM';
+    Caption = 'UoM';
 
     fields
     {

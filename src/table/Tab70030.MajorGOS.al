@@ -1,4 +1,4 @@
-table 70030 "Major GOS"
+table 70030 "Major"
 {
     Caption = 'Major';
 
@@ -20,7 +20,7 @@ table 70030 "Major GOS"
         field(4; "Unit of Measure"; Code[10])
         {
             Caption = 'Unit of Measure';
-            TableRelation = "UOM Table GOS";
+            TableRelation = UoM;
         }
     }
 

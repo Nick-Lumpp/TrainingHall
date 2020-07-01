@@ -1,4 +1,4 @@
-table 70010 "Purpose of Building GOS"
+table 70010 "Purpose of Building"
 {
     Caption = 'Purpose of Building';
 
