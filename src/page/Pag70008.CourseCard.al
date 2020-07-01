@@ -1,7 +1,7 @@
-page 70009 "Courses card"
+page 70008 "Course Card"
 {
 
-    Caption = 'Course card';
+    Caption = 'Course';
     PageType = Card;
     SourceTable = Course;
 
