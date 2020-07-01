@@ -13,7 +13,7 @@ page 70005 "Modules List"
         {
             repeater(General)
             {
-                field("Major Code"; "Major Code")
+                field("Course Code"; "Course Code")
                 {
                     ApplicationArea = All;
                 }
