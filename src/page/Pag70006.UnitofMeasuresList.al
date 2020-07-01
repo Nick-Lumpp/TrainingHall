@@ -4,7 +4,7 @@ page 70006 "Unit of Measures List"
     ApplicationArea = All;
     Caption = 'UOM';
     PageType = List;
-    SourceTable = "UOM Table GOS";
+    SourceTable = UoM;
     UsageCategory = Lists;
 
     layout

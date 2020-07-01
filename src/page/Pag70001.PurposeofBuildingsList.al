@@ -4,7 +4,7 @@ page 70001 "Purpose of Buildings List"
     ApplicationArea = All;
     Caption = 'Purpose of Buildings';
     PageType = List;
-    SourceTable = "Purpose of Building GOS";
+    SourceTable = "Purpose of Building";
     UsageCategory = Lists;
 
     layout

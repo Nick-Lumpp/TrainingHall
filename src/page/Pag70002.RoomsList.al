@@ -3,8 +3,8 @@ page 70002 "Rooms List"
 
     ApplicationArea = All;
     Caption = 'Rooms';
-    PageType = List;
-    SourceTable = "Room Table GOS";
+    PageType = ListPart;
+    SourceTable = "Room";
     UsageCategory = Lists;
 
     layout

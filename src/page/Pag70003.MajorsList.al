@@ -4,7 +4,7 @@ page 70003 "Majors List"
     ApplicationArea = All;
     Caption = 'Majors';
     PageType = List;
-    SourceTable = "Major GOS";
+    SourceTable = "Major";
     UsageCategory = Lists;
 
     layout

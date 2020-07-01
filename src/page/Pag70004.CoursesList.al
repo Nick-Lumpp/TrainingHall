@@ -4,7 +4,7 @@ page 70004 "Courses List"
     ApplicationArea = All;
     Caption = 'Courses';
     PageType = List;
-    SourceTable = "Course GOS";
+    SourceTable = "Course";
     UsageCategory = Lists;
 
     layout
