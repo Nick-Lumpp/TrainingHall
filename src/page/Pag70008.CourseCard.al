@@ -1,7 +1,7 @@
 page 70008 "Course Card"
 {
 
-    Caption = 'Course card';
+    Caption = 'Course';
     PageType = Card;
     SourceTable = Course;
 
