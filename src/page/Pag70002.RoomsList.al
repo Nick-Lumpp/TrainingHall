@@ -1,11 +1,8 @@
-page 70002 "Rooms Page"
+page 70002 "Rooms List"
 {
-
-    ApplicationArea = All;
     Caption = 'Rooms';
-    PageType = List;
-    SourceTable = "Room Table GOS";
-    UsageCategory = Lists;
+    PageType = ListPart;
+    SourceTable = "Room";
 
     layout
     {
@@ -13,14 +10,14 @@ page 70002 "Rooms Page"
         {
             repeater(General)
             {
-                field("Location Code"; "Location Code")
-                {
-                    ApplicationArea = All;
-                }
-                field("Building Code"; "Building Code")
-                {
-                    ApplicationArea = All;
-                }
+                // field("Location Code"; "Location Code")
+                // {
+                //     ApplicationArea = All;
+                // }
+                // field("Building Code"; "Building Code")
+                // {
+                //     ApplicationArea = All;
+                // }
                 field("Room No."; "Room No.")
                 {
                     ApplicationArea = All;

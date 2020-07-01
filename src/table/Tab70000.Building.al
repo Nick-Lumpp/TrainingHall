@@ -1,4 +1,4 @@
-table 70000 "Building Table GOS"
+table 70000 "Building"
 {
     Caption = 'Building';
 
@@ -20,10 +20,10 @@ table 70000 "Building Table GOS"
             Caption = 'Name';
         }
 
-        field(4; "Building Type"; Text[50])
+        field(4; "Type"; Text[50])
         {
             Caption = 'Type';
-            TableRelation = "Purpose of Building GOS";
+            TableRelation = "Purpose of Building";
         }
 
         field(5; "GPS Co-ordinates"; Code[100])
@@ -36,7 +36,7 @@ table 70000 "Building Table GOS"
             Caption = 'No. of Rooms';
             FieldClass = FlowField;
             Editable = false;
-            CalcFormula = count ("Room Table GOS" where("Location Code" = field("Location Code"), "Building Code" = field(Code)));
+            CalcFormula = count ("Room" where("Location Code" = field("Location Code"), "Building Code" = field(Code)));
         }
     }
 

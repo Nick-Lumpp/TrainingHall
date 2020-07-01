@@ -1,11 +1,11 @@
-page 70000 "Buildings Page"
+page 70004 "Courses List"
 {
-
     ApplicationArea = All;
-    Caption = 'Buildings';
+    Caption = 'Courses';
     PageType = List;
-    SourceTable = "Building Table GOS";
+    SourceTable = "Course";
     UsageCategory = Lists;
+    CardPageId = "Course card";
 
     layout
     {
@@ -13,10 +13,6 @@ page 70000 "Buildings Page"
         {
             repeater(General)
             {
-                field("Location Code"; "Location Code")
-                {
-                    ApplicationArea = All;
-                }
                 field(Code; Code)
                 {
                     ApplicationArea = All;
@@ -25,15 +21,23 @@ page 70000 "Buildings Page"
                 {
                     ApplicationArea = All;
                 }
-                field("Building Type"; "Building Type")
+                field(Description; Description)
                 {
                     ApplicationArea = All;
                 }
-                field("GPS Co-ordinates"; "GPS Co-ordinates")
+                field("Search Terms"; "Search Terms")
                 {
                     ApplicationArea = All;
                 }
-                field("No. of Rooms"; "No. of Rooms")
+                field("Available Credits"; "Available Credits")
+                {
+                    ApplicationArea = All;
+                }
+                field(Duration; Duration)
+                {
+                    ApplicationArea = All;
+                }
+                field("Unit of Measure"; "Unit of Measure")
                 {
                     ApplicationArea = All;
                 }

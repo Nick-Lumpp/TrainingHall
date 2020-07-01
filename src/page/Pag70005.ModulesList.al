@@ -1,10 +1,10 @@
-page 70005 "Modules Page"
+page 70005 "Modules List"
 {
 
     ApplicationArea = All;
     Caption = 'Modules';
     PageType = List;
-    SourceTable = "Module GOS";
+    SourceTable = "Module";
     UsageCategory = Lists;
 
     layout

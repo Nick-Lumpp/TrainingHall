@@ -1,4 +1,4 @@
-table 70050 "Module GOS"
+table 70050 "Module"
 {
     Caption = 'Modules';
 
@@ -7,7 +7,7 @@ table 70050 "Module GOS"
         field(1; "Major Code"; Code[20])
         {
             Caption = 'Major Code';
-            TableRelation = "Major GOS";
+            TableRelation = Major;
         }
         field(2; "Module Code"; Code[20])
         {
@@ -32,13 +32,13 @@ table 70050 "Module GOS"
         field(7; "Unit of Measure"; Code[10])
         {
             Caption = 'Unit of Measure';
-            TableRelation = "UOM Table GOS";
+            TableRelation = UoM;
         }
     }
 
     keys
     {
-        key(key1; "Major Code", "Module Name")
+        key(key1; "Major Code", "Module Code")
         { }
     }
 }

@@ -1,11 +1,8 @@
-page 70003 "Majors Page"
+page 70003 "Major List"
 {
-
-    ApplicationArea = All;
     Caption = 'Majors';
-    PageType = List;
-    SourceTable = "Major GOS";
-    UsageCategory = Lists;
+    PageType = ListPart;
+    SourceTable = "Major";
 
     layout
     {
@@ -13,7 +10,11 @@ page 70003 "Majors Page"
         {
             repeater(General)
             {
-                field("Major Code"; "Major Code")
+                // field("Course code"; "Course code")
+                // {
+                //     ApplicationArea = All;
+                // }
+                field(Code; Code)
                 {
                     ApplicationArea = All;
                 }

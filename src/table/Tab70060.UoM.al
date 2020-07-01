@@ -1,6 +1,6 @@
-table 70010 "Purpose of Building GOS"
+table 70060 "UoM"
 {
-    Caption = 'Purpose of Building';
+    Caption = 'UoM';
 
     fields
     {
@@ -9,9 +9,15 @@ table 70010 "Purpose of Building GOS"
             Caption = 'Code';
         }
 
-        field(2; Description; Text[100])
+        field(2; Description; Text[50])
         {
             Caption = 'Description';
         }
+    }
+
+    keys
+    {
+        key(key1; Code)
+        { }
     }
 }

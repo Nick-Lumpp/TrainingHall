@@ -1,17 +1,15 @@
-page 70004 "Courses Page"
+page 70009 "Courses card"
 {
 
-    ApplicationArea = All;
-    Caption = 'Courses';
-    PageType = List;
-    SourceTable = "Course GOS";
-    UsageCategory = Lists;
+    Caption = 'Course card';
+    PageType = Card;
+    SourceTable = Course;
 
     layout
     {
         area(content)
         {
-            repeater(General)
+            group(General)
             {
                 field(Code; Code)
                 {
@@ -42,7 +40,30 @@ page 70004 "Courses Page"
                     ApplicationArea = All;
                 }
             }
+            part(Majors; "Major List")
+            {
+                ApplicationArea = All;
+                SubPageLink = "Course Code" = field(Code);
+            }
         }
     }
 
+    actions
+    {
+        area(Navigation)
+        {
+            action(Modules)
+            {
+                ApplicationArea = All;
+                Caption = 'Modules';
+                RunObject = page "Modules List";
+                RunPageMode = View;
+                Image = Document;
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                PromotedOnly = true;
+            }
+        }
+    }
 }
