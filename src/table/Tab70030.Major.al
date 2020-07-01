@@ -4,20 +4,25 @@ table 70030 "Major"
 
     fields
     {
-        field(1; "Major Code"; Code[20])
+        field(1; "Course code"; Code[20])
+        {
+            Caption = 'Course code';
+            TableRelation = Course;
+        }
+        field(2; "Code"; Code[20])
         {
             Caption = 'Code';
         }
-        field(2; "Name"; Text[50])
+        field(3; "Name"; Text[50])
         {
             Caption = 'Name';
         }
-        field(3; "Duration"; Decimal)
+        field(4; "Duration"; Decimal)
         {
             Caption = 'Duration';
         }
 
-        field(4; "Unit of Measure"; Code[10])
+        field(5; "Unit of Measure"; Code[10])
         {
             Caption = 'Unit of Measure';
             TableRelation = UoM;
@@ -26,7 +31,7 @@ table 70030 "Major"
 
     keys
     {
-        key(key1; "Major Code")
+        key(key1; "Course code", "Code")
         { }
     }
 }

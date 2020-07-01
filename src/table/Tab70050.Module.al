@@ -4,10 +4,10 @@ table 70050 "Module"
 
     fields
     {
-        field(1; "Course Code"; Code[20])
+        field(1; "Major Code"; Code[20])
         {
-            Caption = 'Course Code';
-            TableRelation = "Major";
+            Caption = 'Major Code';
+            TableRelation = Major;
         }
         field(2; "Module Code"; Code[20])
         {
@@ -38,7 +38,7 @@ table 70050 "Module"
 
     keys
     {
-        key(key1; "Course Code", "Module Name")
+        key(key1; "Major Code", "Module Code")
         { }
     }
 }

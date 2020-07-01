@@ -1,12 +1,11 @@
 page 70004 "Courses List"
 {
-
     ApplicationArea = All;
     Caption = 'Courses';
-    PageType = ListPart;
+    PageType = List;
     SourceTable = "Course";
     UsageCategory = Lists;
-    CardPageId = "Major Card";
+    CardPageId = "Course card";
 
     layout
     {
@@ -14,10 +13,6 @@ page 70004 "Courses List"
         {
             repeater(General)
             {
-                // field("Major Code"; "Major Code")
-                // {
-                //     ApplicationArea = All;
-                // }
                 field(Code; Code)
                 {
                     ApplicationArea = All;
