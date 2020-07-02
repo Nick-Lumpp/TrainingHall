@@ -57,6 +57,7 @@ page 70008 "Course Card"
                 ApplicationArea = All;
                 Caption = 'Modules';
                 RunObject = page "Modules List";
+                RunPageLink = "Course Code" = field(Code);
                 RunPageMode = View;
                 Image = Document;
                 Promoted = true;
