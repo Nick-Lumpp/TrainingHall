@@ -17,16 +17,31 @@ report 70000 "Processing Example"
                 DataItemLinkReference = Customer;
                 DataItemLink = "No." = field("No.");
                 DataItemTableView = where("Link to Table" = const(Customer));
+
+                trigger OnPreDataItem()
+                begin
+
+                end;
+
+                trigger OnAfterGetRecord()
+                begin
+                    Message('CBR OnAfterGetRecord');
+                end;
+
+                trigger OnPostDataItem()
+                begin
+                    Message('CBR OnPostDataItem');
+                end;
             }
 
             trigger OnPreDataItem()
             begin
-
+                Message('Customer OnPreDataItem');
             end;
 
             trigger OnAfterGetRecord()
             begin
-                if confirm('Continue?', true) then
+                if confirm('Customer %1; Continue?', true, "No.") then
                     CustCount += 1
                 else
                     CurrReport.Break();
