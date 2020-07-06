@@ -2,7 +2,7 @@ report 70010 "Processed"
 {
     DefaultLayout = RDLC;
     UsageCategory = Tasks;
-    ApplicationArea = All;
+    ApplicationArea = Basic, Suite;
     ProcessingOnly = true;
 
     dataset
@@ -67,7 +67,7 @@ report 70010 "Processed"
                     Caption = 'Processed';
                     field(ProcCount; ProcCount)
                     {
-                        ApplicationArea = All;
+                        ApplicationArea = Basic, Suite;
                         Caption = 'Show Processed Rooms';
                         ToolTip = 'Specifies whether the reported Rooms are processed';
                     }
