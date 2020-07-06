@@ -38,6 +38,11 @@ table 70000 "Building"
             Editable = false;
             CalcFormula = count ("Room" where("Location Code" = field("Location Code"), "Building Code" = field(Code)));
         }
+
+        field(7; Processed; Boolean)
+        {
+            Caption = 'Processed';
+        }
     }
 
     keys

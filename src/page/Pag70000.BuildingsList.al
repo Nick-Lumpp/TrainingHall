@@ -38,6 +38,10 @@ page 70000 "Buildings List"
                 {
                     ApplicationArea = All;
                 }
+                field(Processed; Processed)
+                {
+                    ApplicationArea = All;
+                }
             }
         }
     }
