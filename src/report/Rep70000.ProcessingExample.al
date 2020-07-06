@@ -20,7 +20,7 @@ report 70000 "Processing Example"
 
                 trigger OnPreDataItem()
                 begin
-
+                    Message('CBR OnPreDataItem');
                 end;
 
                 trigger OnAfterGetRecord()
