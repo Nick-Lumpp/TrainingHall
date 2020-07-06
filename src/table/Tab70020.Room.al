@@ -34,6 +34,11 @@ table 70020 "Room"
         {
             Caption = 'Capacity';
         }
+
+        field(7; Processed; Boolean)
+        {
+            Caption = 'Processed';
+        }
     }
 
     keys

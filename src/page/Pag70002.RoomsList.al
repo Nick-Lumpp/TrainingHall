@@ -34,6 +34,10 @@ page 70002 "Rooms List"
                 {
                     ApplicationArea = All;
                 }
+                field(Processed; Processed)
+                {
+                    ApplicationArea = All;
+                }
             }
         }
     }
