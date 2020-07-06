@@ -38,9 +38,22 @@ table 70020 "Room"
         field(7; Processed; Boolean)
         {
             Caption = 'Processed';
+
+            trigger OnValidate()
+            var
+                Room: Record Building;
+            begin
+                if not Processed then
+                    exit;
+
+                Room.SetRange(Code, Rec."Building Code");
+                Room.SetRange(Processed, true);
+                Room.SetRange("Location Code", "Location Code");
+
+                Room.ModifyAll(Processed, false);
+            end;
         }
     }
-
     keys
     {
         key(key1; "Location Code", "Building Code", "Room No.")
