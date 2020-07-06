@@ -1,8 +1,10 @@
 report 70010 "Processed"
 {
     DefaultLayout = RDLC;
+    RDLCLayout = './Processed.rdlc';
     UsageCategory = Tasks;
-    ApplicationArea = Basic, Suite;
+    ApplicationArea = All;
+    PreviewMode = PrintLayout;
     ProcessingOnly = true;
 
     dataset
@@ -10,17 +12,18 @@ report 70010 "Processed"
         dataitem(Building; Building)
         {
             RequestFilterFields = "Location Code", "Code";
-            DataItemTableView = sorting(Code);
+            DataItemTableView = sorting("Location Code", Code);
 
             dataitem(Room; Room)
             {
                 RequestFilterFields = "Room No.";
                 DataItemLinkReference = Building;
                 DataItemLink = "Location Code" = field("Location Code"), "Building Code" = field(Code);
+                DataItemTableView = sorting("Building Code", "Room No.");
 
                 trigger OnPreDataItem()
                 begin
-
+                    Message('Room OnPreDataItem');
                 end;
 
                 trigger OnAfterGetRecord()
@@ -62,12 +65,12 @@ report 70010 "Processed"
         {
             area(Content)
             {
-                group(Processed)
+                group(Processes)
                 {
-                    Caption = 'Processed';
-                    field(ProcCount; ProcCount)
+                    Caption = 'Processes';
+                    field(Processed; ProcCount)
                     {
-                        ApplicationArea = Basic, Suite;
+                        ApplicationArea = All;
                         Caption = 'Show Processed Rooms';
                         ToolTip = 'Specifies whether the reported Rooms are processed';
                     }
