@@ -1,6 +1,6 @@
 table 70020 "Room"
 {
-    Caption = 'Lecture Room';
+    Caption = 'Room';
     fields
     {
         field(1; "Location Code"; Code[20])
