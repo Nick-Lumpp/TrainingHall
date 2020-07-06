@@ -1,5 +1,6 @@
 report 70010 "Processed"
 {
+    DefaultLayout = RDLC;
     UsageCategory = Tasks;
     ApplicationArea = All;
     ProcessingOnly = true;
@@ -8,12 +9,14 @@ report 70010 "Processed"
     {
         dataitem(Building; Building)
         {
-            RequestFilterFields = "No. of Rooms", Processed;
+            RequestFilterFields = "Location Code", "Code";
+            DataItemTableView = sorting(Code);
 
             dataitem(Room; Room)
             {
+                RequestFilterFields = "Room No.";
                 DataItemLinkReference = Building;
-                DataItemLink = "Building Code" = field("Code");
+                DataItemLink = "Location Code" = field("Location Code"), "Building Code" = field(Code);
 
                 trigger OnPreDataItem()
                 begin
@@ -48,6 +51,28 @@ report 70010 "Processed"
             begin
                 Message('Processed %1 buildings', ProcCount);
             end;
+        }
+    }
+
+    requestpage
+    {
+        SaveValues = true;
+
+        layout
+        {
+            area(Content)
+            {
+                group(Processed)
+                {
+                    Caption = 'Processed';
+                    field(ProcCount; ProcCount)
+                    {
+                        ApplicationArea = All;
+                        Caption = 'Show Processed Rooms';
+                        ToolTip = 'Specifies whether the reported Rooms are processed';
+                    }
+                }
+            }
         }
     }
 
