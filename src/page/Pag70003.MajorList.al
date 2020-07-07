@@ -49,7 +49,6 @@ page 70003 "Major List"
                 PromotedCategory = Process;
                 PromotedIsBig = true;
                 PromotedOnly = true;
-
             }
         }
     }
