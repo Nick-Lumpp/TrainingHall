@@ -66,5 +66,7 @@ page 70008 "Course Card"
                 PromotedOnly = true;
             }
         }
+
     }
 }
+
