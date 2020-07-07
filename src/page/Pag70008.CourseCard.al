@@ -47,24 +47,23 @@ page 70008 "Course Card"
         }
     }
 
-
-    // actions
-    // {
-    //     area(Navigation)
-    //     {
-    //         action(Modules)
-    //         {
-    //             ApplicationArea = All;
-    //             Caption = 'Modules';
-    //             RunObject = page "Modules List";
-    //             RunPageLink = "Course Code" = field(Code);
-    //             RunPageMode = View;
-    //             Image = Document;
-    //             Promoted = true;
-    //             PromotedCategory = Process;
-    //             PromotedIsBig = true;
-    //             PromotedOnly = true;
-    //         }
-    //     }
-    // }
+    actions
+    {
+        area(Navigation)
+        {
+            action(Modules)
+            {
+                ApplicationArea = All;
+                Caption = 'Modules';
+                RunObject = page "Modules List";
+                RunPageLink = "Course Code" = field(Code);
+                RunPageMode = View;
+                Image = Document;
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                PromotedOnly = true;
+            }
+        }
+    }
 }
