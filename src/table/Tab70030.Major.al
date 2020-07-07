@@ -29,6 +29,7 @@ table 70030 "Major"
         }
     }
 
+
     keys
     {
         key(key1; "Course code", "Code")

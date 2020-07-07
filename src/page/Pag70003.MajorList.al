@@ -33,5 +33,24 @@ page 70003 "Major List"
             }
         }
     }
+    actions
+    {
+        area(Processing)
+        {
+            action(Modules)
+            {
+                ApplicationArea = All;
+                Caption = 'Modules';
+                RunObject = page "Modules List";
+                RunPageLink = "Course Code" = field(Code);
+                RunPageMode = View;
+                Image = Document;
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                PromotedOnly = true;
 
+            }
+        }
+    }
 }
