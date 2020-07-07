@@ -2,7 +2,6 @@ page 70008 "Course Card"
 {
     Caption = 'Course';
     PageType = Card;
-    PromotedActionCategories = 'Modules';
     SourceTable = Course;
 
     layout
