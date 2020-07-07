@@ -1,10 +1,7 @@
 report 70010 "Processed"
 {
-    DefaultLayout = RDLC;
-    RDLCLayout = './Processed.rdlc';
     UsageCategory = Tasks;
     ApplicationArea = All;
-    PreviewMode = PrintLayout;
     ProcessingOnly = true;
 
     dataset
