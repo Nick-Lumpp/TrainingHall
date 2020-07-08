@@ -19,7 +19,7 @@ table 70013 "Module Cost GOS"
 
     keys
     {
-        key(key1; "Module Code", Cost)
+        key(key1; "Module Code")
         { }
     }
 }

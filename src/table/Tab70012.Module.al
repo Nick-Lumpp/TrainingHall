@@ -44,7 +44,7 @@ table 70012 "Module"
 
     keys
     {
-        key(key1; "Course Code", Code)
+        key(key1; Code, "Course Code")
         { }
     }
 }

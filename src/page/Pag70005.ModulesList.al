@@ -48,4 +48,23 @@ page 70005 "Modules List"
             }
         }
     }
+    // actions
+    // {
+    //     area(Navigation)
+    //     {
+    //         action(Costs)
+    //         {
+    //             ApplicationArea = All;
+    //             Caption = 'Costs';
+    //             RunObject = page "Module Costs";
+    //             RunPageLink = "Module Code" = field(Code);
+    //             RunPageMode = View;
+    //             Image = Cost;
+    //             Promoted = true;
+    //             PromotedCategory = Process;
+    //             PromotedIsBig = true;
+    //             PromotedOnly = true;
+    //         }
+    //     }
+    // }
 }
