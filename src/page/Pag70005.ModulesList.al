@@ -13,15 +13,15 @@ page 70005 "Modules List"
         {
             repeater(General)
             {
-                field("Course Code"; "Course Code")
-                {
-                    ApplicationArea = All;
-                }
                 field(Code; Code)
                 {
                     ApplicationArea = All;
                 }
                 field(Name; Name)
+                {
+                    ApplicationArea = All;
+                }
+                field("Course Code"; "Course Code")
                 {
                     ApplicationArea = All;
                 }

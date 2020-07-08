@@ -4,18 +4,18 @@ table 70012 "Module"
 
     fields
     {
-        field(1; "Course Code"; Code[20])
-        {
-            Caption = 'Course Code';
-            TableRelation = Course;
-        }
-        field(2; "Code"; Code[20])
+        field(1; "Code"; Code[20])
         {
             Caption = 'Code';
         }
-        field(3; "Name"; Text[50])
+        field(2; "Name"; Text[50])
         {
             Caption = 'Name';
+        }
+        field(3; "Course Code"; Code[20])
+        {
+            Caption = 'Course Code';
+            TableRelation = Course;
         }
         field(4; Description; Text[250])
         {
