@@ -9,27 +9,32 @@ table 70050 "Module"
             Caption = 'Course Code';
             TableRelation = Course;
         }
-        field(2; "Module Code"; Code[20])
+        field(2; "Course Code 2"; Code[20])
+        {
+            Caption = 'Course Code 2';
+            TableRelation = Course;
+        }
+        field(3; "Code"; Code[20])
         {
             Caption = 'Code';
         }
-        field(3; "Module Name"; Text[50])
+        field(4; "Name"; Text[50])
         {
-            Caption = 'Module Name';
+            Caption = 'Name';
         }
-        field(4; Description; Text[250])
+        field(5; Description; Text[250])
         {
             Caption = 'Description';
         }
-        field(5; Credits; Decimal)
+        field(6; Credits; Decimal)
         {
             Caption = 'Credits';
         }
-        field(6; "Duration"; Decimal)
+        field(7; "Duration"; Decimal)
         {
             Caption = 'Duration';
         }
-        field(7; "Unit of Measure"; Code[10])
+        field(8; "Unit of Measure"; Code[10])
         {
             Caption = 'Unit of Measure';
             TableRelation = UoM;
@@ -38,7 +43,7 @@ table 70050 "Module"
 
     keys
     {
-        key(key1; "Course Code", "Module Code")
+        key(key1; "Course Code", "Course Code 2", Code)
         { }
     }
 }

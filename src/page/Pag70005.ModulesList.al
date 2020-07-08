@@ -17,11 +17,15 @@ page 70005 "Modules List"
                 {
                     ApplicationArea = All;
                 }
-                field("Module Code"; "Module Code")
+                field("Course Code 2"; "Course Code 2")
                 {
                     ApplicationArea = All;
                 }
-                field("Module Name"; "Module Name")
+                field(Code; Code)
+                {
+                    ApplicationArea = All;
+                }
+                field(Name; Name)
                 {
                     ApplicationArea = All;
                 }
@@ -44,5 +48,4 @@ page 70005 "Modules List"
             }
         }
     }
-
 }
