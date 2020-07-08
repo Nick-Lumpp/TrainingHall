@@ -1,12 +1,12 @@
-page 70009 Costs
+page 70009 "Module Costs"
 {
-    
+
     ApplicationArea = All;
-    Caption = 'Costs';
+    Caption = 'Module Costs';
     PageType = List;
-    SourceTable = "Cost GOS";
+    SourceTable = "Module Cost GOS";
     UsageCategory = Lists;
-    
+
     layout
     {
         area(content)
@@ -24,5 +24,5 @@ page 70009 Costs
             }
         }
     }
-    
+
 }

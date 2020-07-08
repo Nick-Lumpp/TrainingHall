@@ -1,4 +1,4 @@
-table 70013 "Cost GOS"
+table 70013 "Module Cost GOS"
 {
     Caption = 'Cost';
 
@@ -8,6 +8,7 @@ table 70013 "Cost GOS"
         field(1; "Module Code"; Code[20])
         {
             Caption = 'Module Code';
+            TableRelation = Module;
         }
         field(2; Cost; Decimal)
         {
