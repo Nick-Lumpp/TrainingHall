@@ -17,10 +17,6 @@ page 70005 "Modules List"
                 {
                     ApplicationArea = All;
                 }
-                field("Course Code 2"; "Course Code 2")
-                {
-                    ApplicationArea = All;
-                }
                 field(Code; Code)
                 {
                     ApplicationArea = All;
