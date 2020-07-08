@@ -41,6 +41,10 @@ page 70005 "Modules List"
                 {
                     ApplicationArea = All;
                 }
+                field(Cost; Cost)
+                {
+                    ApplicationArea = All;
+                }
             }
         }
     }
