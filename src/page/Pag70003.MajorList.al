@@ -1,7 +1,9 @@
 page 70003 "Major List"
 {
     Caption = 'Majors';
+    DataCaptionFields = "Course code";
     PageType = ListPart;
+    SaveValues = true;
     SourceTable = "Major";
 
     layout
@@ -21,6 +23,7 @@ page 70003 "Major List"
                 field(Name; Name)
                 {
                     ApplicationArea = All;
+
                 }
                 field(Duration; Duration)
                 {
@@ -37,18 +40,22 @@ page 70003 "Major List"
     {
         area(Processing)
         {
-            action(Modules)
+            group(Line)
             {
-                ApplicationArea = All;
-                Caption = 'Modules';
-                RunObject = page "Modules List";
-                RunPageLink = "Course Code" = field(Code);
-                RunPageMode = View;
-                Image = Document;
-                Promoted = true;
-                PromotedCategory = Process;
-                PromotedIsBig = true;
-                PromotedOnly = true;
+                Caption = 'Line';
+                action(Modules)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Modules';
+                    RunObject = page "Modules List";
+                    RunPageLink = "Course Code" = field("Course code");
+                    RunPageMode = View;
+                    Image = Document;
+                    Promoted = true;
+                    PromotedCategory = Process;
+                    PromotedIsBig = true;
+                    PromotedOnly = true;
+                }
             }
         }
     }
