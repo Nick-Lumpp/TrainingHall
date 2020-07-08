@@ -16,6 +16,7 @@ page 70003 "Major List"
                 // {
                 //     ApplicationArea = All;
                 // }
+
                 field(Code; Code)
                 {
                     ApplicationArea = All;
