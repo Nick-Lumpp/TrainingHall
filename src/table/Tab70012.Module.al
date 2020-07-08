@@ -38,7 +38,7 @@ table 70012 "Module"
         {
             FieldClass = FlowField;
             Caption = 'Cost';
-            CalcFormula = lookup ("Cost GOS".Cost where("Module Code" = field(Code)));
+            CalcFormula = lookup ("Module Cost GOS".Cost where("Module Code" = field(Code)));
         }
     }
 
