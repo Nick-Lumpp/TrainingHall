@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Local settings (.vs)\\Layouts",
+    "\\Local settings (.vs)\\Layouts\\v16"
   ],
-  "PreviewInSolutionExplorer": true
+  "SelectedNode": "\\SalesDocuments.rdlc",
+  "PreviewInSolutionExplorer": false
 }
