@@ -17,9 +17,9 @@ report 70002 "Sales Document"
             column(TitleLbl; StrSubstNo(TitleLbl, "No.")) { }
             column(No_SalesHeader_Caption; FieldCaption("No.")) { }
             column(Sell_to_Customer_No; "Sell-to Customer No.") { }
-            column(Sell_to_Customer_No_Caption; FieldCaption("Sell-to Customer No.")) { }
+            column(Sell_to_Customer_No_Caption; CustomerNoLbl) { }
             column(Sell_to_Customer_Name; "Sell-to Customer Name") { }
-            column(Sell_to_Customer_Name_Caption; FieldCaption("Sell-to Customer Name")) { }
+            column(Sell_to_Customer_Name_Caption; CustomerNameLbl) { }
             column(Document_Date; format("Document Date", 0, 4)) { }
             column(Document_Date_Caption; FieldCaption("Document Date")) { }
 
@@ -40,6 +40,8 @@ report 70002 "Sales Document"
     }
     var
         TitleLbl: Label 'Order Confirmation : %1';
+        CustomerNameLbl: Label 'Customer Name';
+        CustomerNoLbl: Label 'Customer No.';
 
     trigger OnPreReport()
     begin
