@@ -28,34 +28,4 @@ report 70002 "Sales Document"
         if SalesHeader.Count = 0 then
             Error('Nothing to Do!');
     end;
-
-    // requestpage
-    // {
-    //     layout
-    //     {
-    //         area(Content)
-    //         {
-    //             group(GroupName)
-    //             {
-    //                 field(Name; SourceExpression)
-    //                 {
-    //                     ApplicationArea = All;
-
-    //                 }
-    //             }
-    //         }
-    //     }
-
-    //     actions
-    //     {
-    //         area(processing)
-    //         {
-    //             action(ActionName)
-    //             {
-    //                 ApplicationArea = All;
-
-    //             }
-    //         }
-    //     }
-    // }
 }
