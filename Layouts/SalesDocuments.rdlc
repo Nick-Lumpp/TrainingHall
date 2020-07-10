@@ -10,46 +10,6 @@
       <rd:DataSourceID>2d1ea6d6-447b-4681-a250-fecd1b136d72</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="Document_Type">
-          <DataField>Document_Type</DataField>
-        </Field>
-        <Field Name="Document_Type_Caption">
-          <DataField>Document_Type_Caption</DataField>
-        </Field>
-        <Field Name="No_SalesHeader">
-          <DataField>No_SalesHeader</DataField>
-        </Field>
-        <Field Name="No_SalesHeader_Caption">
-          <DataField>No_SalesHeader_Caption</DataField>
-        </Field>
-        <Field Name="Sell_to_Customer_No">
-          <DataField>Sell_to_Customer_No</DataField>
-        </Field>
-        <Field Name="Sell_to_Customer_No_Caption">
-          <DataField>Sell_to_Customer_No_Caption</DataField>
-        </Field>
-        <Field Name="Sell_to_Customer_Name">
-          <DataField>Sell_to_Customer_Name</DataField>
-        </Field>
-        <Field Name="Sell_to_Customer_Name_Caption">
-          <DataField>Sell_to_Customer_Name_Caption</DataField>
-        </Field>
-        <Field Name="Document_Date">
-          <DataField>Document_Date</DataField>
-        </Field>
-        <Field Name="Document_Date_Caption">
-          <DataField>Document_Date_Caption</DataField>
-        </Field>
-      </Fields>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -58,19 +18,19 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>2.5cm</Width>
+                  <Width>1.89146cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3.33785cm</Width>
+                  <Width>2.25306cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3.33785cm</Width>
+                  <Width>2.41181cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3.33785cm</Width>
+                  <Width>2.04139cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.5cm</Width>
+                  <Width>4.35208cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -225,7 +185,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -408,7 +367,7 @@
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
             <Height>1.14708cm</Height>
-            <Width>15.01355cm</Width>
+            <Width>12.9498cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -432,12 +391,6 @@
       </Page>
     </ReportSection>
   </ReportSections>
-  <ReportParametersLayout>
-    <GridLayoutDefinition>
-      <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>2</NumberOfRows>
-    </GridLayoutDefinition>
-  </ReportParametersLayout>
   <Code>Public Function BlankZero(ByVal Value As Decimal)
     if Value = 0 then
         Return ""
@@ -477,4 +430,62 @@ End Function
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="Document_Type">
+          <DataField>Document_Type</DataField>
+        </Field>
+        <Field Name="Document_Type_Caption">
+          <DataField>Document_Type_Caption</DataField>
+        </Field>
+        <Field Name="No_SalesHeader">
+          <DataField>No_SalesHeader</DataField>
+        </Field>
+        <Field Name="No_SalesHeader_Caption">
+          <DataField>No_SalesHeader_Caption</DataField>
+        </Field>
+        <Field Name="Sell_to_Customer_No">
+          <DataField>Sell_to_Customer_No</DataField>
+        </Field>
+        <Field Name="Sell_to_Customer_No_Caption">
+          <DataField>Sell_to_Customer_No_Caption</DataField>
+        </Field>
+        <Field Name="Sell_to_Customer_Name">
+          <DataField>Sell_to_Customer_Name</DataField>
+        </Field>
+        <Field Name="Sell_to_Customer_Name_Caption">
+          <DataField>Sell_to_Customer_Name_Caption</DataField>
+        </Field>
+        <Field Name="Document_Date">
+          <DataField>Document_Date</DataField>
+        </Field>
+        <Field Name="Document_Date_Caption">
+          <DataField>Document_Date_Caption</DataField>
+        </Field>
+        <Field Name="Type_SalesLine">
+          <DataField>Type_SalesLine</DataField>
+        </Field>
+        <Field Name="Type_SalesLine_Caption">
+          <DataField>Type_SalesLine_Caption</DataField>
+        </Field>
+        <Field Name="No_SalesLine">
+          <DataField>No_SalesLine</DataField>
+        </Field>
+        <Field Name="No_SalesLine_Caption">
+          <DataField>No_SalesLine_Caption</DataField>
+        </Field>
+        <Field Name="Description_SalesLine">
+          <DataField>Description_SalesLine</DataField>
+        </Field>
+        <Field Name="Description_SalesLine_Caption">
+          <DataField>Description_SalesLine_Caption</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>
