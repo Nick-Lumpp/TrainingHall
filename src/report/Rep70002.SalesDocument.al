@@ -14,6 +14,7 @@ report 70002 "Sales Document"
             column(Document_Type; "Document Type") { }
             column(Document_Type_Caption; FieldCaption("Document Type")) { }
             column(No_SalesHeader; "No.") { }
+            column(TitleLbl; StrSubstNo(TitleLbl, "No.")) { }
             column(No_SalesHeader_Caption; FieldCaption("No.")) { }
             column(Sell_to_Customer_No; "Sell-to Customer No.") { }
             column(Sell_to_Customer_No_Caption; FieldCaption("Sell-to Customer No.")) { }
@@ -37,6 +38,8 @@ report 70002 "Sales Document"
             }
         }
     }
+    var
+        TitleLbl: Label 'Order Confirmation : %1';
 
     trigger OnPreReport()
     begin
