@@ -27,6 +27,7 @@ report 70002 "Sales Document"
                 DataItemLink = "Document Type" = field("Document Type"), "Document No." = field("No.");
                 DataItemTableView = sorting("Document Type", "Document No.", "Line No.");
 
+                column(LineNo_SalesLine; "Line No.") { }
                 column(Type_SalesLine; Type) { }
                 column(Type_SalesLine_Caption; FieldCaption(Type)) { }
                 column(No_SalesLine; "No.") { }
