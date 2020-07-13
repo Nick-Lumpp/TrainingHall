@@ -27,7 +27,7 @@ report 70002 "Sales Document"
             column(Sell_to_Contact_No_; "Sell-to Contact No.") { }
             column(Sell_to_Contact_No_Caption; FieldCaption("Sell-to Contact No.")) { }
             column(Sell_to_Address; "Sell-to Address") { }
-            column(Sell_to_Address_Caption; FieldCaption("Sell-to Address")) { }
+            column(Sell_to_Address_Caption; CustomerAddLbl) { }
             column(Sell_to_Address_2; "Sell-to Address 2") { }
             column(Sell_to_Address_2_Caption; FieldCaption("Sell-to Address 2")) { }
             column(Sell_to_City; "Sell-to City") { }
@@ -62,6 +62,7 @@ report 70002 "Sales Document"
         TitleLbl: Label 'Order Confirmation : %1';
         CustomerNameLbl: Label 'Customer Name';
         CustomerNoLbl: Label 'Customer No.';
+        CustomerAddLbl: Label 'Customer Address:';
 
     trigger OnPreReport()
     begin
