@@ -47,11 +47,11 @@ report 70002 "Sales Document"
                 column(Description_SalesLine; Description) { }
                 column(Description_SalesLine_Caption; FieldCaption(Description)) { }
                 column(Quantity; Quantity) { }
-                column(Quantity_Caption; FieldCaption(Quantity)) { }
+                column(Quantity_Caption; QuantityLbl) { }
                 column(Line_Amount; "Line Amount") { }
                 column(Line_Amount_Caption; FieldCaption("Line Amount")) { }
                 column(Unit_of_Measure; "Unit of Measure") { }
-                column(Unit_of_Measure_Caption; FieldCaption("Unit of Measure")) { }
+                column(Unit_of_Measure_Caption; UnitofMeasureLbl) { }
                 column(Unit_Cost; "Unit Cost") { }
                 column(Unit_Cost_Caption; FieldCaption("Unit Cost")) { }
 
@@ -61,6 +61,8 @@ report 70002 "Sales Document"
                     column(Name_Caption; CompanyNameLbl) { }
                     column(Contact_Person; "Contact Person") { }
                     column(Contact_Person_Caption; FieldCaption("Contact Person")) { }
+                    column(Phone_No_; "Phone No.") { }
+                    column(Phone_No_Caption; FieldCaption("Phone No.")) { }
                     column(CompanyAdrLbl; CompanyAdrLbl) { }
                     column(Address; Address) { }
                     column(Address_2; "Address 2") { }
@@ -78,8 +80,10 @@ report 70002 "Sales Document"
         CustomerNoLbl: Label 'Customer No.';
         CustomerAdrLbl: Label 'Customer Address';
         CompanyAdrLbl: Label 'Company Address';
-        CompanyNameLbl: Label 'Company Name';
+        CompanyNameLbl: Label 'Company Name:';
         DocDateLbl: Label 'Document Date:';
+        QuantityLbl: Label 'Qty';
+        UnitofMeasureLbl: Label 'UOM';
 
     trigger OnPreReport()
     begin
