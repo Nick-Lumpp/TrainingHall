@@ -70,7 +70,9 @@ report 70002 "Sales Document"
                     column(County; County) { }
                     column(Post_Code; "Post Code") { }
                     column(Country_Region_Code; "Country/Region Code") { }
+
                 }
+
             }
         }
     }
