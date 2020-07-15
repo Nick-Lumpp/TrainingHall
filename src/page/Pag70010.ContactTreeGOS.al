@@ -4,6 +4,7 @@ page 70010 "Contact Tree GOS"
     ApplicationArea = All;
     Caption = 'Contact Tree GOS';
     PageType = List;
+    SourceTableView = sorting("Tree Sort Order GOS");
     SourceTable = Contact;
     UsageCategory = Lists;
 
@@ -13,6 +14,10 @@ page 70010 "Contact Tree GOS"
         {
             repeater(General)
             {
+                ShowAsTree = true;
+                TreeInitialState = CollapseAll;
+                IndentationColumn = "Tree Level GOS";
+
                 field("Tree Sort Order GOS"; "Tree Sort Order GOS")
                 {
                     ApplicationArea = All;
