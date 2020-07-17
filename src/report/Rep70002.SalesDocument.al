@@ -34,6 +34,23 @@ report 70002 "Sales Document"
             column(Sell_to_Post_Code; "Sell-to Post Code") { }
             column(Sell_to_Country_Region_Code; "Sell-to Country/Region Code") { }
 
+            dataitem("Company Information"; "Company Information")
+            {
+                column(Name; Name) { }
+                column(Name_Caption; CompanyNameLbl) { }
+                column(Contact_Person; "Contact Person") { }
+                column(Contact_Person_Caption; FieldCaption("Contact Person")) { }
+                column(Phone_No_; "Phone No.") { }
+                column(Phone_No_Caption; FieldCaption("Phone No.")) { }
+                column(CompanyAdrLbl; CompanyAdrLbl) { }
+                column(Address; Address) { }
+                column(Address_2; "Address 2") { }
+                column(City; City) { }
+                column(County; County) { }
+                column(Post_Code; "Post Code") { }
+                column(Country_Region_Code; "Country/Region Code") { }
+            }
+
             dataitem(SalesLines; "Sales Line")
             {
                 DataItemLink = "Document Type" = field("Document Type"), "Document No." = field("No.");
@@ -54,25 +71,18 @@ report 70002 "Sales Document"
                 column(Unit_of_Measure_Caption; UnitofMeasureLbl) { }
                 column(Unit_Cost; "Unit Cost") { }
                 column(Unit_Cost_Caption; FieldCaption("Unit Cost")) { }
+                column(Inv__Discount_Amount; "Inv. Discount Amount") { }
+                column(Inv__Discount_Amount_Caption; FieldCaption("Inv. Discount Amount")) { }
 
-                dataitem("Company Information"; "Company Information")
-                {
-                    column(Name; Name) { }
-                    column(Name_Caption; CompanyNameLbl) { }
-                    column(Contact_Person; "Contact Person") { }
-                    column(Contact_Person_Caption; FieldCaption("Contact Person")) { }
-                    column(Phone_No_; "Phone No.") { }
-                    column(Phone_No_Caption; FieldCaption("Phone No.")) { }
-                    column(CompanyAdrLbl; CompanyAdrLbl) { }
-                    column(Address; Address) { }
-                    column(Address_2; "Address 2") { }
-                    column(City; City) { }
-                    column(County; County) { }
-                    column(Post_Code; "Post Code") { }
-                    column(Country_Region_Code; "Country/Region Code") { }
-
-                }
-
+                // dataitem("VAT Amount Line"; "VAT Amount Line")
+                // {
+                //     column(GetTotalAmountInclVAT; "Amount Including VAT") { }
+                //     column(GetTotalAmountInclVAT_Caption; TotalinclVATLbl) { }
+                //     column(GetTotalVATAmount; GetTotalVATAmount) { }
+                //     column(GetTotalVATAmount_Caption; TotalVATLbl) { }
+                //     column(GetTotalLineAmount; GetTotalLineAmount) { }
+                //     column(GetTotalLineAmount_Caption; TotalexclVATLbl) { }
+                // }
             }
         }
     }
@@ -86,11 +96,13 @@ report 70002 "Sales Document"
         DocDateLbl: Label 'Document Date:';
         QuantityLbl: Label 'Qty';
         UnitofMeasureLbl: Label 'UOM';
+        TotalinclVATLbl: Label 'Total Incl. VAT';
+        TotalVATLbl: Label 'Total VAT';
+        TotalexclVATLbl: Label 'Total Excl VAT';
 
     trigger OnPreReport()
     begin
         if SalesHeader.Count = 0 then
             Error('Nothing to Do!');
     end;
-
 }
