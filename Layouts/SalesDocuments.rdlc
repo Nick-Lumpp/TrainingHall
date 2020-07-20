@@ -4067,6 +4067,24 @@ End Function
         <Field Name="Inv__Discount_Amount_Caption">
           <DataField>Inv__Discount_Amount_Caption</DataField>
         </Field>
+        <Field Name="GetTotalAmountInclVAT">
+          <DataField>GetTotalAmountInclVAT</DataField>
+        </Field>
+        <Field Name="GetTotalAmountInclVATFormat">
+          <DataField>GetTotalAmountInclVATFormat</DataField>
+        </Field>
+        <Field Name="GetTotalAmountInclVAT_Caption">
+          <DataField>GetTotalAmountInclVAT_Caption</DataField>
+        </Field>
+        <Field Name="GetTotalVATAmount">
+          <DataField>GetTotalVATAmount</DataField>
+        </Field>
+        <Field Name="GetTotalVATAmountFormat">
+          <DataField>GetTotalVATAmountFormat</DataField>
+        </Field>
+        <Field Name="GetTotalVATAmount_Caption">
+          <DataField>GetTotalVATAmount_Caption</DataField>
+        </Field>
       </Fields>
       <Query>
         <DataSourceName>DataSource</DataSourceName>

@@ -74,15 +74,15 @@ report 70002 "Sales Document"
                 column(Inv__Discount_Amount; "Inv. Discount Amount") { }
                 column(Inv__Discount_Amount_Caption; FieldCaption("Inv. Discount Amount")) { }
 
-                // dataitem("VAT Amount Line"; "VAT Amount Line")
-                // {
-                //     column(GetTotalAmountInclVAT; "Amount Including VAT") { }
-                //     column(GetTotalAmountInclVAT_Caption; TotalinclVATLbl) { }
-                //     column(GetTotalVATAmount; GetTotalVATAmount) { }
-                //     column(GetTotalVATAmount_Caption; TotalVATLbl) { }
-                //     column(GetTotalLineAmount; GetTotalLineAmount) { }
-                //     column(GetTotalLineAmount_Caption; TotalexclVATLbl) { }
-                // }
+                dataitem("VAT Amount Line"; "VAT Amount Line")
+                {
+                    column(GetTotalAmountInclVAT; "Amount Including VAT") { }
+                    column(GetTotalAmountInclVAT_Caption; TotalinclVATLbl) { }
+                    column(GetTotalVATAmount; GetTotalVATAmount) { }
+                    column(GetTotalVATAmount_Caption; TotalVATLbl) { }
+                    //column(GetTotalLineAmount; GetTotalLineAmount) { }
+
+                }
             }
         }
     }
