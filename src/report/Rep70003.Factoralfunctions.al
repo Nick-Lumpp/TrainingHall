@@ -31,6 +31,11 @@ report 70003 "Factoral functions"
     var
         Input: Integer;
 
+    /// <summary> 
+    /// Description for Factoral.
+    /// </summary>
+    /// <param name="n">Parameter of type Integer.</param>
+    /// <returns>Return value of type Integer.</returns>
     procedure Factoral(n: Integer): Integer
     begin
 

@@ -79,6 +79,9 @@ report 70001 "Processed"
     var
         ProcCount: Integer;
 
+    /// <summary> 
+    /// Description for TestProcedure.
+    /// </summary>
     local procedure TestProcedure()
     begin
 

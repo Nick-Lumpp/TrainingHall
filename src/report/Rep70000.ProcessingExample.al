@@ -57,6 +57,9 @@ report 70000 "Processing Example"
     var
         CustCount: Integer;
 
+    /// <summary> 
+    /// Description for TestProcedure.
+    /// </summary>
     local procedure TestProcedure()
     begin
 
